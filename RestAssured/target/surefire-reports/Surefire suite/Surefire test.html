@@ -1,0 +1,557 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>53/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Jan 04 14:36:08 EET 2026</td>
+</tr>
+<tr><td>Total time:</td><td>22 seconds (22888 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCasesForEmailSTG.SendRequestWithoutCampaign()'><b>SendRequestWithoutCampaign</b><br>Test class: TestCasesForEmailSTG</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Expected response time was not a value less than &lt;3000L&gt; milliseconds, was 4801 milliseconds (4801 milliseconds).
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$26.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.time(ResponseSpecificationImpl.groovy:127)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.time(ValidatableResponseOptionsImpl.java:409)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.time(ValidatableResponseOptionsImpl.java:405)
+	at TestCasesForEmailSTG.SendRequestWithoutCampaign(TestCasesForEmailSTG.java:348)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1183402521", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1183402521'><pre>java.lang.AssertionError: 1 expectation failed.
+Expected response time was not a value less than &lt;3000L&gt; milliseconds, was 4801 milliseconds (4801 milliseconds).
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$26.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.time(ResponseSpecificationImpl.groovy:127)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.time(ValidatableResponseOptionsImpl.java:409)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.time(ValidatableResponseOptionsImpl.java:405)
+	at TestCasesForEmailSTG.SendRequestWithoutCampaign(TestCasesForEmailSTG.java:348)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+</pre></div></td>
+<td>4</td>
+<td>TestCasesForEmailSTG@769e7ee8</td></tr>
+<tr>
+<td title='TestCasesForEmailSTG.ValidChannel_Format()'><b>ValidChannel_Format</b><br>Test class: TestCasesForEmailSTG</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Expected response time was not a value less than &lt;3000L&gt; milliseconds, was 4031 milliseconds (4031 milliseconds).
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$26.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.time(ResponseSpecificationImpl.groovy:127)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.time(ValidatableResponseOptionsImpl.java:409)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.time(ValidatableResponseOptionsImpl.java:405)
+	at TestCasesForEmailSTG.ValidChannel_Format(TestCasesForEmailSTG.java:248)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace578765896", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace578765896'><pre>java.lang.AssertionError: 1 expectation failed.
+Expected response time was not a value less than &lt;3000L&gt; milliseconds, was 4031 milliseconds (4031 milliseconds).
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$26.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.time(ResponseSpecificationImpl.groovy:127)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.time(ValidatableResponseOptionsImpl.java:409)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.time(ValidatableResponseOptionsImpl.java:405)
+	at TestCasesForEmailSTG.ValidChannel_Format(TestCasesForEmailSTG.java:248)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+</pre></div></td>
+<td>4</td>
+<td>TestCasesForEmailSTG@769e7ee8</td></tr>
+<tr>
+<td title='TestCasesForEmailSTG.ValidEmail()'><b>ValidEmail</b><br>Test class: TestCasesForEmailSTG</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Expected response time was not a value less than &lt;4000L&gt; milliseconds, was 8369 milliseconds (8369 milliseconds).
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$26.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.time(ResponseSpecificationImpl.groovy:127)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.time(ValidatableResponseOptionsImpl.java:409)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.time(ValidatableResponseOptionsImpl.java:405)
+	at TestCasesForEmailSTG.ValidEmail(TestCasesForEmailSTG.java:112)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1387279918", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1387279918'><pre>java.lang.AssertionError: 1 expectation failed.
+Expected response time was not a value less than &lt;4000L&gt; milliseconds, was 8369 milliseconds (8369 milliseconds).
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$26.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.time(ResponseSpecificationImpl.groovy:127)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.time(ValidatableResponseOptionsImpl.java:409)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.time(ValidatableResponseOptionsImpl.java:405)
+	at TestCasesForEmailSTG.ValidEmail(TestCasesForEmailSTG.java:112)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+</pre></div></td>
+<td>8</td>
+<td>TestCasesForEmailSTG@769e7ee8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCasesForEmailSTG.InvalidEmail_Format_Sender()'><b>InvalidEmail_Format_Sender</b><br>Test class: TestCasesForEmailSTG</td>
+<td></td>
+<td>2</td>
+<td>TestCasesForEmailSTG@769e7ee8</td></tr>
+<tr>
+<td title='TestCasesForSMSSTG.SendRequestWithoutCampaign()'><b>SendRequestWithoutCampaign</b><br>Test class: TestCasesForSMSSTG</td>
+<td></td>
+<td>7</td>
+<td>TestCasesForSMSSTG@5276e6b0</td></tr>
+<tr>
+<td title='TestCasesForWhatsappSTG.MissingPhoneNumber()'><b>MissingPhoneNumber</b><br>Test class: TestCasesForWhatsappSTG</td>
+<td></td>
+<td>0</td>
+<td>TestCasesForWhatsappSTG@71b1176b</td></tr>
+<tr>
+<td title='TestCasesForSMSSTG.AssertThatChannelNotHaveSameChannelForFailOver()'><b>AssertThatChannelNotHaveSameChannelForFailOver</b><br>Test class: TestCasesForSMSSTG</td>
+<td></td>
+<td>0</td>
+<td>TestCasesForSMSSTG@5276e6b0</td></tr>
+<tr>
+<td title='TestCasesForEmailSTG.InvalidTokenWithStatus()'><b>InvalidTokenWithStatus</b><br>Test class: TestCasesForEmailSTG</td>
+<td></td>
+<td>0</td>
+<td>TestCasesForEmailSTG@769e7ee8</td></tr>
+<tr>
+<td title='TestCasesForWhatsappSTG.ValidChannel_Format()'><b>ValidChannel_Format</b><br>Test class: TestCasesForWhatsappSTG</td>
+<td></td>
+<td>2</td>
+<td>TestCasesForWhatsappSTG@71b1176b</td></tr>
+<tr>
+<td title='TestCasesForWhatsappSTG.InvalidPhoneNumber_Format()'><b>InvalidPhoneNumber_Format</b><br>Test class: TestCasesForWhatsappSTG</td>
+<td></td>
+<td>2</td>
+<td>TestCasesForWhatsappSTG@71b1176b</td></tr>
+<tr>
+<td title='TestCasesForSMSSTG.SendRequestWithoutSenderSenderTemplateMessageInfo()'><b>SendRequestWithoutSenderSenderTemplateMessageInfo</b><br>Test class: TestCasesForSMSSTG</td>
+<td></td>
+<td>0</td>
+<td>TestCasesForSMSSTG@5276e6b0</td></tr>
+<tr>
+<td title='TestCasesForWhatsappSTG.TokenWithStatus()'><b>TokenWithStatus</b><br>Test class: TestCasesForWhatsappSTG</td>
+<td></td>
+<td>6</td>
+<td>TestCasesForWhatsappSTG@71b1176b</td></tr>
+<tr>
+<td title='TestCase.getLogs()'><b>getLogs</b><br>Test class: TestCase</td>
+<td></td>
+<td>6</td>
+<td>TestCase@1a04f701</td></tr>
+<tr>
+<td title='TestCase.testHasItems()'><b>testHasItems</b><br>Test class: TestCase</td>
+<td></td>
+<td>1</td>
+<td>TestCase@1a04f701</td></tr>
+<tr>
+<td title='TestCasesForSMSSTG.InvalidPhoneNumber_Format()'><b>InvalidPhoneNumber_Format</b><br>Test class: TestCasesForSMSSTG</td>
+<td></td>
+<td>2</td>
+<td>TestCasesForSMSSTG@5276e6b0</td></tr>
+<tr>
+<td title='TestCasesForEmailSTG.SendRequestWithoutFailover()'><b>SendRequestWithoutFailover</b><br>Test class: TestCasesForEmailSTG</td>
+<td></td>
+<td>2</td>
+<td>TestCasesForEmailSTG@769e7ee8</td></tr>
+<tr>
+<td title='TestCasesForSMSSTG.ValidPhoneNumber()'><b>ValidPhoneNumber</b><br>Test class: TestCasesForSMSSTG</td>
+<td></td>
+<td>9</td>
+<td>TestCasesForSMSSTG@5276e6b0</td></tr>
+<tr>
+<td title='TestCasesForEmailSTG.MissingChannel_Format()'><b>MissingChannel_Format</b><br>Test class: TestCasesForEmailSTG</td>
+<td></td>
+<td>0</td>
+<td>TestCasesForEmailSTG@769e7ee8</td></tr>
+<tr>
+<td title='TestCase.testContainsInAnyOrder()'><b>testContainsInAnyOrder</b><br>Test class: TestCase</td>
+<td></td>
+<td>8</td>
+<td>TestCase@1a04f701</td></tr>
+<tr>
+<td title='TestCase.testTime()'><b>testTime</b><br>Test class: TestCase</td>
+<td></td>
+<td>0</td>
+<td>TestCase@1a04f701</td></tr>
+<tr>
+<td title='TestCasesForSMSSTG.MissingPhoneNumber()'><b>MissingPhoneNumber</b><br>Test class: TestCasesForSMSSTG</td>
+<td></td>
+<td>0</td>
+<td>TestCasesForSMSSTG@5276e6b0</td></tr>
+<tr>
+<td title='TestCasesForSMSSTG.TokenWithStatus()'><b>TokenWithStatus</b><br>Test class: TestCasesForSMSSTG</td>
+<td></td>
+<td>9</td>
+<td>TestCasesForSMSSTG@5276e6b0</td></tr>
+<tr>
+<td title='TestCasesForSMSSTG.MissingChannel_Format()'><b>MissingChannel_Format</b><br>Test class: TestCasesForSMSSTG</td>
+<td></td>
+<td>0</td>
+<td>TestCasesForSMSSTG@5276e6b0</td></tr>
+<tr>
+<td title='TestCase.testNotEmpty()'><b>testNotEmpty</b><br>Test class: TestCase</td>
+<td></td>
+<td>1</td>
+<td>TestCase@1a04f701</td></tr>
+<tr>
+<td title='TestCasesForWhatsappSTG.SendRequestWithoutCampaign()'><b>SendRequestWithoutCampaign</b><br>Test class: TestCasesForWhatsappSTG</td>
+<td></td>
+<td>1</td>
+<td>TestCasesForWhatsappSTG@71b1176b</td></tr>
+<tr>
+<td title='TestCasesForEmailSTG.AssertThatAPIWorkingWithoutLanguageANDMetaData()'><b>AssertThatAPIWorkingWithoutLanguageANDMetaData</b><br>Test class: TestCasesForEmailSTG</td>
+<td></td>
+<td>2</td>
+<td>TestCasesForEmailSTG@769e7ee8</td></tr>
+<tr>
+<td title='TestCasesForSMSSTG.InvalidTokenWithStatus()'><b>InvalidTokenWithStatus</b><br>Test class: TestCasesForSMSSTG</td>
+<td></td>
+<td>0</td>
+<td>TestCasesForSMSSTG@5276e6b0</td></tr>
+<tr>
+<td title='TestCase.testEqualTo()'><b>testEqualTo</b><br>Test class: TestCase</td>
+<td></td>
+<td>8</td>
+<td>TestCase@1a04f701</td></tr>
+<tr>
+<td title='TestCasesForEmailSTG.MissingEmail()'><b>MissingEmail</b><br>Test class: TestCasesForEmailSTG</td>
+<td></td>
+<td>0</td>
+<td>TestCasesForEmailSTG@769e7ee8</td></tr>
+<tr>
+<td title='TestCase.IfError()'><b>IfError</b><br>Test class: TestCase</td>
+<td></td>
+<td>6</td>
+<td>TestCase@1a04f701</td></tr>
+<tr>
+<td title='TestCasesForWhatsappSTG.ValidPhoneNumber()'><b>ValidPhoneNumber</b><br>Test class: TestCasesForWhatsappSTG</td>
+<td></td>
+<td>5</td>
+<td>TestCasesForWhatsappSTG@71b1176b</td></tr>
+<tr>
+<td title='TestCasesForWhatsappSTG.SendRequestWithoutSenderSenderTemplateMessageInfo()'><b>SendRequestWithoutSenderSenderTemplateMessageInfo</b><br>Test class: TestCasesForWhatsappSTG</td>
+<td></td>
+<td>0</td>
+<td>TestCasesForWhatsappSTG@71b1176b</td></tr>
+<tr>
+<td title='TestCase.testSTATUSCODE()'><b>testSTATUSCODE</b><br>Test class: TestCase</td>
+<td></td>
+<td>0</td>
+<td>TestCase@1a04f701</td></tr>
+<tr>
+<td title='TestCasesForEmailSTG.TokenWithStatus()'><b>TokenWithStatus</b><br>Test class: TestCasesForEmailSTG</td>
+<td></td>
+<td>8</td>
+<td>TestCasesForEmailSTG@769e7ee8</td></tr>
+<tr>
+<td title='TestCasesForWhatsappSTG.InvalidTokenWithStatus()'><b>InvalidTokenWithStatus</b><br>Test class: TestCasesForWhatsappSTG</td>
+<td></td>
+<td>0</td>
+<td>TestCasesForWhatsappSTG@71b1176b</td></tr>
+<tr>
+<td title='TestCasesForWhatsappSTG.AssertThatAPIWorkingWithoutLanguageANDMetaData()'><b>AssertThatAPIWorkingWithoutLanguageANDMetaData</b><br>Test class: TestCasesForWhatsappSTG</td>
+<td></td>
+<td>0</td>
+<td>TestCasesForWhatsappSTG@71b1176b</td></tr>
+<tr>
+<td title='TestCasesForWhatsappSTG.MissingChannel_Format()'><b>MissingChannel_Format</b><br>Test class: TestCasesForWhatsappSTG</td>
+<td></td>
+<td>0</td>
+<td>TestCasesForWhatsappSTG@71b1176b</td></tr>
+<tr>
+<td title='TestCasesForWhatsappSTG.SendRequestWithoutFailover()'><b>SendRequestWithoutFailover</b><br>Test class: TestCasesForWhatsappSTG</td>
+<td></td>
+<td>0</td>
+<td>TestCasesForWhatsappSTG@71b1176b</td></tr>
+<tr>
+<td title='TestCase.assertOnResponseBody()'><b>assertOnResponseBody</b><br>Test class: TestCase</td>
+<td></td>
+<td>8</td>
+<td>TestCase@1a04f701</td></tr>
+<tr>
+<td title='TestCasesForSMSSTG.ValidChannel_Format()'><b>ValidChannel_Format</b><br>Test class: TestCasesForSMSSTG</td>
+<td></td>
+<td>7</td>
+<td>TestCasesForSMSSTG@5276e6b0</td></tr>
+<tr>
+<td title='TestCase.extractObject()'><b>extractObject</b><br>Test class: TestCase</td>
+<td></td>
+<td>8</td>
+<td>TestCase@1a04f701</td></tr>
+<tr>
+<td title='TestCasesForSMSSTG.SendRequestWithoutFailover()'><b>SendRequestWithoutFailover</b><br>Test class: TestCasesForSMSSTG</td>
+<td></td>
+<td>6</td>
+<td>TestCasesForSMSSTG@5276e6b0</td></tr>
+<tr>
+<td title='TestCase.testEmpty()'><b>testEmpty</b><br>Test class: TestCase</td>
+<td></td>
+<td>7</td>
+<td>TestCase@1a04f701</td></tr>
+<tr>
+<td title='TestCase.testNot()'><b>testNot</b><br>Test class: TestCase</td>
+<td></td>
+<td>1</td>
+<td>TestCase@1a04f701</td></tr>
+<tr>
+<td title='TestCase.extract()'><b>extract</b><br>Test class: TestCase</td>
+<td></td>
+<td>6</td>
+<td>TestCase@1a04f701</td></tr>
+<tr>
+<td title='TestCase.testSize()'><b>testSize</b><br>Test class: TestCase</td>
+<td></td>
+<td>2</td>
+<td>TestCase@1a04f701</td></tr>
+<tr>
+<td title='TestCasesForWhatsappSTG.AssertThatChannelNotHaveSameChannelForFailOver()'><b>AssertThatChannelNotHaveSameChannelForFailOver</b><br>Test class: TestCasesForWhatsappSTG</td>
+<td></td>
+<td>0</td>
+<td>TestCasesForWhatsappSTG@71b1176b</td></tr>
+<tr>
+<td title='TestCasesForEmailSTG.AssertThatChannelNotHaveSameChannelForFailOver()'><b>AssertThatChannelNotHaveSameChannelForFailOver</b><br>Test class: TestCasesForEmailSTG</td>
+<td></td>
+<td>0</td>
+<td>TestCasesForEmailSTG@769e7ee8</td></tr>
+<tr>
+<td title='TestCasesForWhatsappSTG.InvalidChannel_Format()'><b>InvalidChannel_Format</b><br>Test class: TestCasesForWhatsappSTG</td>
+<td></td>
+<td>0</td>
+<td>TestCasesForWhatsappSTG@71b1176b</td></tr>
+<tr>
+<td title='TestCasesForSMSSTG.AssertThatAPIWorkingWithoutLanguageANDMetaData()'><b>AssertThatAPIWorkingWithoutLanguageANDMetaData</b><br>Test class: TestCasesForSMSSTG</td>
+<td></td>
+<td>5</td>
+<td>TestCasesForSMSSTG@5276e6b0</td></tr>
+<tr>
+<td title='TestCasesForEmailSTG.InvalidChannel_Format()'><b>InvalidChannel_Format</b><br>Test class: TestCasesForEmailSTG</td>
+<td></td>
+<td>0</td>
+<td>TestCasesForEmailSTG@769e7ee8</td></tr>
+<tr>
+<td title='TestCase.testHasItem()'><b>testHasItem</b><br>Test class: TestCase</td>
+<td></td>
+<td>8</td>
+<td>TestCase@1a04f701</td></tr>
+<tr>
+<td title='TestCasesForEmailSTG.SendRequestWithoutSenderSenderTemplateMessageInfo()'><b>SendRequestWithoutSenderSenderTemplateMessageInfo</b><br>Test class: TestCasesForEmailSTG</td>
+<td></td>
+<td>0</td>
+<td>TestCasesForEmailSTG@769e7ee8</td></tr>
+<tr>
+<td title='TestCase.testContains()'><b>testContains</b><br>Test class: TestCase</td>
+<td></td>
+<td>8</td>
+<td>TestCase@1a04f701</td></tr>
+<tr>
+<td title='TestCasesForEmailSTG.InvalidEmail_Format_To()'><b>InvalidEmail_Format_To</b><br>Test class: TestCasesForEmailSTG</td>
+<td></td>
+<td>2</td>
+<td>TestCasesForEmailSTG@769e7ee8</td></tr>
+<tr>
+<td title='TestCasesForSMSSTG.InvalidChannel_Format()'><b>InvalidChannel_Format</b><br>Test class: TestCasesForSMSSTG</td>
+<td></td>
+<td>0</td>
+<td>TestCasesForSMSSTG@5276e6b0</td></tr>
+</table><p>
+</body>
+</html>

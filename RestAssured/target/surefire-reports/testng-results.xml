@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="56" passed="53" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-01-04T14:36:08 EET" name="Surefire suite" finished-at="2026-01-04T14:36:31 EET" duration-ms="22888">
+    <groups>
+    </groups>
+    <test started-at="2026-01-04T14:36:08 EET" name="Surefire test" finished-at="2026-01-04T14:36:31 EET" duration-ms="22888">
+      <class name="TestCasesForSMSSTG">
+        <test-method signature="TokenWithStatus()[pri:1, instance:TestCasesForSMSSTG@5276e6b0]" started-at="2026-01-04T14:36:17 EET" name="TokenWithStatus" finished-at="2026-01-04T14:36:26 EET" duration-ms="9141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TokenWithStatus -->
+        <test-method signature="InvalidTokenWithStatus()[pri:2, instance:TestCasesForSMSSTG@5276e6b0]" started-at="2026-01-04T14:36:17 EET" name="InvalidTokenWithStatus" finished-at="2026-01-04T14:36:18 EET" duration-ms="878" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidTokenWithStatus -->
+        <test-method signature="ValidPhoneNumber()[pri:3, instance:TestCasesForSMSSTG@5276e6b0]" started-at="2026-01-04T14:36:17 EET" name="ValidPhoneNumber" finished-at="2026-01-04T14:36:27 EET" duration-ms="9835" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidPhoneNumber -->
+        <test-method signature="InvalidPhoneNumber_Format()[pri:4, instance:TestCasesForSMSSTG@5276e6b0]" started-at="2026-01-04T14:36:18 EET" name="InvalidPhoneNumber_Format" finished-at="2026-01-04T14:36:20 EET" duration-ms="2719" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidPhoneNumber_Format -->
+        <test-method signature="MissingPhoneNumber()[pri:5, instance:TestCasesForSMSSTG@5276e6b0]" started-at="2026-01-04T14:36:20 EET" name="MissingPhoneNumber" finished-at="2026-01-04T14:36:21 EET" duration-ms="393" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MissingPhoneNumber -->
+        <test-method signature="ValidChannel_Format()[pri:6, instance:TestCasesForSMSSTG@5276e6b0]" started-at="2026-01-04T14:36:20 EET" name="ValidChannel_Format" finished-at="2026-01-04T14:36:28 EET" duration-ms="7562" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidChannel_Format -->
+        <test-method signature="InvalidChannel_Format()[pri:7, instance:TestCasesForSMSSTG@5276e6b0]" started-at="2026-01-04T14:36:21 EET" name="InvalidChannel_Format" finished-at="2026-01-04T14:36:21 EET" duration-ms="412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidChannel_Format -->
+        <test-method signature="MissingChannel_Format()[pri:8, instance:TestCasesForSMSSTG@5276e6b0]" started-at="2026-01-04T14:36:22 EET" name="MissingChannel_Format" finished-at="2026-01-04T14:36:22 EET" duration-ms="239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MissingChannel_Format -->
+        <test-method signature="SendRequestWithoutCampaign()[pri:9, instance:TestCasesForSMSSTG@5276e6b0]" started-at="2026-01-04T14:36:22 EET" name="SendRequestWithoutCampaign" finished-at="2026-01-04T14:36:30 EET" duration-ms="7346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SendRequestWithoutCampaign -->
+        <test-method signature="SendRequestWithoutSenderSenderTemplateMessageInfo()[pri:10, instance:TestCasesForSMSSTG@5276e6b0]" started-at="2026-01-04T14:36:23 EET" name="SendRequestWithoutSenderSenderTemplateMessageInfo" finished-at="2026-01-04T14:36:23 EET" duration-ms="228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SendRequestWithoutSenderSenderTemplateMessageInfo -->
+        <test-method signature="SendRequestWithoutFailover()[pri:11, instance:TestCasesForSMSSTG@5276e6b0]" started-at="2026-01-04T14:36:24 EET" name="SendRequestWithoutFailover" finished-at="2026-01-04T14:36:31 EET" duration-ms="6959" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SendRequestWithoutFailover -->
+        <test-method signature="AssertThatAPIWorkingWithoutLanguageANDMetaData()[pri:12, instance:TestCasesForSMSSTG@5276e6b0]" started-at="2026-01-04T14:36:25 EET" name="AssertThatAPIWorkingWithoutLanguageANDMetaData" finished-at="2026-01-04T14:36:31 EET" duration-ms="5592" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AssertThatAPIWorkingWithoutLanguageANDMetaData -->
+        <test-method signature="AssertThatChannelNotHaveSameChannelForFailOver()[pri:13, instance:TestCasesForSMSSTG@5276e6b0]" started-at="2026-01-04T14:36:25 EET" name="AssertThatChannelNotHaveSameChannelForFailOver" finished-at="2026-01-04T14:36:26 EET" duration-ms="241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AssertThatChannelNotHaveSameChannelForFailOver -->
+      </class> <!-- TestCasesForSMSSTG -->
+      <class name="TestCasesForEmailSTG">
+        <test-method signature="TokenWithStatus()[pri:1, instance:TestCasesForEmailSTG@769e7ee8]" started-at="2026-01-04T14:36:17 EET" name="TokenWithStatus" finished-at="2026-01-04T14:36:25 EET" duration-ms="8427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TokenWithStatus -->
+        <test-method signature="InvalidTokenWithStatus()[pri:2, instance:TestCasesForEmailSTG@769e7ee8]" started-at="2026-01-04T14:36:17 EET" name="InvalidTokenWithStatus" finished-at="2026-01-04T14:36:18 EET" duration-ms="878" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidTokenWithStatus -->
+        <test-method signature="ValidEmail()[pri:3, instance:TestCasesForEmailSTG@769e7ee8]" started-at="2026-01-04T14:36:17 EET" name="ValidEmail" finished-at="2026-01-04T14:36:25 EET" duration-ms="8434" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected response time was not a value less than <4000L> milliseconds, was 8369 milliseconds (8369 milliseconds).]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected response time was not a value less than <4000L> milliseconds, was 8369 milliseconds (8369 milliseconds).
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$26.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.time(ResponseSpecificationImpl.groovy:127)
+at io.restassured.internal.ValidatableResponseOptionsImpl.time(ValidatableResponseOptionsImpl.java:409)
+at io.restassured.internal.ValidatableResponseOptionsImpl.time(ValidatableResponseOptionsImpl.java:405)
+at TestCasesForEmailSTG.ValidEmail(TestCasesForEmailSTG.java:112)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidEmail -->
+        <test-method signature="InvalidEmail_Format_To()[pri:4, instance:TestCasesForEmailSTG@769e7ee8]" started-at="2026-01-04T14:36:18 EET" name="InvalidEmail_Format_To" finished-at="2026-01-04T14:36:20 EET" duration-ms="2720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidEmail_Format_To -->
+        <test-method signature="InvalidEmail_Format_Sender()[pri:5, instance:TestCasesForEmailSTG@769e7ee8]" started-at="2026-01-04T14:36:18 EET" name="InvalidEmail_Format_Sender" finished-at="2026-01-04T14:36:20 EET" duration-ms="2470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidEmail_Format_Sender -->
+        <test-method signature="MissingEmail()[pri:6, instance:TestCasesForEmailSTG@769e7ee8]" started-at="2026-01-04T14:36:20 EET" name="MissingEmail" finished-at="2026-01-04T14:36:21 EET" duration-ms="367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MissingEmail -->
+        <test-method signature="ValidChannel_Format()[pri:7, instance:TestCasesForEmailSTG@769e7ee8]" started-at="2026-01-04T14:36:21 EET" name="ValidChannel_Format" finished-at="2026-01-04T14:36:25 EET" duration-ms="4078" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected response time was not a value less than <3000L> milliseconds, was 4031 milliseconds (4031 milliseconds).]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected response time was not a value less than <3000L> milliseconds, was 4031 milliseconds (4031 milliseconds).
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$26.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.time(ResponseSpecificationImpl.groovy:127)
+at io.restassured.internal.ValidatableResponseOptionsImpl.time(ValidatableResponseOptionsImpl.java:409)
+at io.restassured.internal.ValidatableResponseOptionsImpl.time(ValidatableResponseOptionsImpl.java:405)
+at TestCasesForEmailSTG.ValidChannel_Format(TestCasesForEmailSTG.java:248)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidChannel_Format -->
+        <test-method signature="InvalidChannel_Format()[pri:8, instance:TestCasesForEmailSTG@769e7ee8]" started-at="2026-01-04T14:36:21 EET" name="InvalidChannel_Format" finished-at="2026-01-04T14:36:22 EET" duration-ms="320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidChannel_Format -->
+        <test-method signature="MissingChannel_Format()[pri:9, instance:TestCasesForEmailSTG@769e7ee8]" started-at="2026-01-04T14:36:22 EET" name="MissingChannel_Format" finished-at="2026-01-04T14:36:22 EET" duration-ms="265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MissingChannel_Format -->
+        <test-method signature="SendRequestWithoutCampaign()[pri:10, instance:TestCasesForEmailSTG@769e7ee8]" started-at="2026-01-04T14:36:23 EET" name="SendRequestWithoutCampaign" finished-at="2026-01-04T14:36:28 EET" duration-ms="4808" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected response time was not a value less than <3000L> milliseconds, was 4801 milliseconds (4801 milliseconds).]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected response time was not a value less than <3000L> milliseconds, was 4801 milliseconds (4801 milliseconds).
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$26.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.time(ResponseSpecificationImpl.groovy:127)
+at io.restassured.internal.ValidatableResponseOptionsImpl.time(ValidatableResponseOptionsImpl.java:409)
+at io.restassured.internal.ValidatableResponseOptionsImpl.time(ValidatableResponseOptionsImpl.java:405)
+at TestCasesForEmailSTG.SendRequestWithoutCampaign(TestCasesForEmailSTG.java:348)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SendRequestWithoutCampaign -->
+        <test-method signature="SendRequestWithoutSenderSenderTemplateMessageInfo()[pri:11, instance:TestCasesForEmailSTG@769e7ee8]" started-at="2026-01-04T14:36:24 EET" name="SendRequestWithoutSenderSenderTemplateMessageInfo" finished-at="2026-01-04T14:36:25 EET" duration-ms="272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SendRequestWithoutSenderSenderTemplateMessageInfo -->
+        <test-method signature="SendRequestWithoutFailover()[pri:12, instance:TestCasesForEmailSTG@769e7ee8]" started-at="2026-01-04T14:36:25 EET" name="SendRequestWithoutFailover" finished-at="2026-01-04T14:36:28 EET" duration-ms="2743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SendRequestWithoutFailover -->
+        <test-method signature="AssertThatAPIWorkingWithoutLanguageANDMetaData()[pri:13, instance:TestCasesForEmailSTG@769e7ee8]" started-at="2026-01-04T14:36:25 EET" name="AssertThatAPIWorkingWithoutLanguageANDMetaData" finished-at="2026-01-04T14:36:28 EET" duration-ms="2718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AssertThatAPIWorkingWithoutLanguageANDMetaData -->
+        <test-method signature="AssertThatChannelNotHaveSameChannelForFailOver()[pri:14, instance:TestCasesForEmailSTG@769e7ee8]" started-at="2026-01-04T14:36:26 EET" name="AssertThatChannelNotHaveSameChannelForFailOver" finished-at="2026-01-04T14:36:26 EET" duration-ms="291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AssertThatChannelNotHaveSameChannelForFailOver -->
+      </class> <!-- TestCasesForEmailSTG -->
+      <class name="TestCase">
+        <test-method signature="getLogs()[pri:0, instance:TestCase@1a04f701]" started-at="2026-01-04T14:36:08 EET" name="getLogs" finished-at="2026-01-04T14:36:15 EET" duration-ms="6961" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLogs -->
+        <test-method signature="testContainsInAnyOrder()[pri:0, instance:TestCase@1a04f701]" started-at="2026-01-04T14:36:08 EET" name="testContainsInAnyOrder" finished-at="2026-01-04T14:36:17 EET" duration-ms="8687" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContainsInAnyOrder -->
+        <test-method signature="testEqualTo()[pri:0, instance:TestCase@1a04f701]" started-at="2026-01-04T14:36:08 EET" name="testEqualTo" finished-at="2026-01-04T14:36:17 EET" duration-ms="8714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEqualTo -->
+        <test-method signature="IfError()[pri:0, instance:TestCase@1a04f701]" started-at="2026-01-04T14:36:08 EET" name="IfError" finished-at="2026-01-04T14:36:15 EET" duration-ms="6961" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- IfError -->
+        <test-method signature="assertOnResponseBody()[pri:0, instance:TestCase@1a04f701]" started-at="2026-01-04T14:36:08 EET" name="assertOnResponseBody" finished-at="2026-01-04T14:36:17 EET" duration-ms="8712" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertOnResponseBody -->
+        <test-method signature="testEmpty()[pri:0, instance:TestCase@1a04f701]" started-at="2026-01-04T14:36:08 EET" name="testEmpty" finished-at="2026-01-04T14:36:15 EET" duration-ms="7135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmpty -->
+        <test-method signature="extract()[pri:0, instance:TestCase@1a04f701]" started-at="2026-01-04T14:36:08 EET" name="extract" finished-at="2026-01-04T14:36:15 EET" duration-ms="6962" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extract -->
+        <test-method signature="testHasItem()[pri:0, instance:TestCase@1a04f701]" started-at="2026-01-04T14:36:08 EET" name="testHasItem" finished-at="2026-01-04T14:36:17 EET" duration-ms="8683" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHasItem -->
+        <test-method signature="testContains()[pri:0, instance:TestCase@1a04f701]" started-at="2026-01-04T14:36:08 EET" name="testContains" finished-at="2026-01-04T14:36:17 EET" duration-ms="8688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContains -->
+        <test-method signature="extractObject()[pri:0, instance:TestCase@1a04f701]" started-at="2026-01-04T14:36:08 EET" name="extractObject" finished-at="2026-01-04T14:36:17 EET" duration-ms="8712" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extractObject -->
+        <test-method signature="testHasItems()[pri:0, instance:TestCase@1a04f701]" started-at="2026-01-04T14:36:15 EET" name="testHasItems" finished-at="2026-01-04T14:36:17 EET" duration-ms="1715" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHasItems -->
+        <test-method signature="testNotEmpty()[pri:0, instance:TestCase@1a04f701]" started-at="2026-01-04T14:36:15 EET" name="testNotEmpty" finished-at="2026-01-04T14:36:17 EET" duration-ms="1710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNotEmpty -->
+        <test-method signature="testNot()[pri:0, instance:TestCase@1a04f701]" started-at="2026-01-04T14:36:15 EET" name="testNot" finished-at="2026-01-04T14:36:17 EET" duration-ms="1715" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNot -->
+        <test-method signature="testSTATUSCODE()[pri:0, instance:TestCase@1a04f701]" started-at="2026-01-04T14:36:15 EET" name="testSTATUSCODE" finished-at="2026-01-04T14:36:16 EET" duration-ms="554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSTATUSCODE -->
+        <test-method signature="testSize()[pri:0, instance:TestCase@1a04f701]" started-at="2026-01-04T14:36:16 EET" name="testSize" finished-at="2026-01-04T14:36:18 EET" duration-ms="2126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSize -->
+        <test-method signature="testTime()[pri:0, instance:TestCase@1a04f701]" started-at="2026-01-04T14:36:17 EET" name="testTime" finished-at="2026-01-04T14:36:17 EET" duration-ms="541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTime -->
+      </class> <!-- TestCase -->
+      <class name="TestCasesForWhatsappSTG">
+        <test-method signature="TokenWithStatus()[pri:1, instance:TestCasesForWhatsappSTG@71b1176b]" started-at="2026-01-04T14:36:17 EET" name="TokenWithStatus" finished-at="2026-01-04T14:36:23 EET" duration-ms="6054" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TokenWithStatus -->
+        <test-method signature="InvalidTokenWithStatus()[pri:2, instance:TestCasesForWhatsappSTG@71b1176b]" started-at="2026-01-04T14:36:17 EET" name="InvalidTokenWithStatus" finished-at="2026-01-04T14:36:18 EET" duration-ms="854" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidTokenWithStatus -->
+        <test-method signature="ValidPhoneNumber()[pri:3, instance:TestCasesForWhatsappSTG@71b1176b]" started-at="2026-01-04T14:36:17 EET" name="ValidPhoneNumber" finished-at="2026-01-04T14:36:23 EET" duration-ms="5519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidPhoneNumber -->
+        <test-method signature="InvalidPhoneNumber_Format()[pri:4, instance:TestCasesForWhatsappSTG@71b1176b]" started-at="2026-01-04T14:36:18 EET" name="InvalidPhoneNumber_Format" finished-at="2026-01-04T14:36:20 EET" duration-ms="2721" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidPhoneNumber_Format -->
+        <test-method signature="MissingPhoneNumber()[pri:5, instance:TestCasesForWhatsappSTG@71b1176b]" started-at="2026-01-04T14:36:20 EET" name="MissingPhoneNumber" finished-at="2026-01-04T14:36:21 EET" duration-ms="360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MissingPhoneNumber -->
+        <test-method signature="ValidChannel_Format()[pri:6, instance:TestCasesForWhatsappSTG@71b1176b]" started-at="2026-01-04T14:36:21 EET" name="ValidChannel_Format" finished-at="2026-01-04T14:36:23 EET" duration-ms="2087" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidChannel_Format -->
+        <test-method signature="InvalidChannel_Format()[pri:7, instance:TestCasesForWhatsappSTG@71b1176b]" started-at="2026-01-04T14:36:21 EET" name="InvalidChannel_Format" finished-at="2026-01-04T14:36:21 EET" duration-ms="383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidChannel_Format -->
+        <test-method signature="MissingChannel_Format()[pri:8, instance:TestCasesForWhatsappSTG@71b1176b]" started-at="2026-01-04T14:36:22 EET" name="MissingChannel_Format" finished-at="2026-01-04T14:36:22 EET" duration-ms="245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MissingChannel_Format -->
+        <test-method signature="SendRequestWithoutCampaign()[pri:9, instance:TestCasesForWhatsappSTG@71b1176b]" started-at="2026-01-04T14:36:23 EET" name="SendRequestWithoutCampaign" finished-at="2026-01-04T14:36:24 EET" duration-ms="1021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SendRequestWithoutCampaign -->
+        <test-method signature="SendRequestWithoutSenderSenderTemplateMessageInfo()[pri:10, instance:TestCasesForWhatsappSTG@71b1176b]" started-at="2026-01-04T14:36:23 EET" name="SendRequestWithoutSenderSenderTemplateMessageInfo" finished-at="2026-01-04T14:36:23 EET" duration-ms="238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SendRequestWithoutSenderSenderTemplateMessageInfo -->
+        <test-method signature="SendRequestWithoutFailover()[pri:11, instance:TestCasesForWhatsappSTG@71b1176b]" started-at="2026-01-04T14:36:23 EET" name="SendRequestWithoutFailover" finished-at="2026-01-04T14:36:24 EET" duration-ms="957" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SendRequestWithoutFailover -->
+        <test-method signature="AssertThatAPIWorkingWithoutLanguageANDMetaData()[pri:12, instance:TestCasesForWhatsappSTG@71b1176b]" started-at="2026-01-04T14:36:25 EET" name="AssertThatAPIWorkingWithoutLanguageANDMetaData" finished-at="2026-01-04T14:36:25 EET" duration-ms="327" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AssertThatAPIWorkingWithoutLanguageANDMetaData -->
+        <test-method signature="AssertThatChannelNotHaveSameChannelForFailOver()[pri:13, instance:TestCasesForWhatsappSTG@71b1176b]" started-at="2026-01-04T14:36:26 EET" name="AssertThatChannelNotHaveSameChannelForFailOver" finished-at="2026-01-04T14:36:26 EET" duration-ms="224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AssertThatChannelNotHaveSameChannelForFailOver -->
+      </class> <!-- TestCasesForWhatsappSTG -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

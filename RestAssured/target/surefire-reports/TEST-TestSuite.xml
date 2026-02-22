@@ -1,0 +1,1348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="24.194" tests="56" errors="0" skipped="0" failures="3">
+  <properties>
+    <property name="java.specification.version" value="23"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\RestAssured\target\test-classes;D:\RestAssured\target\classes;C:\Users\muhamed.gamal\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\muhamed.gamal\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\muhamed.gamal\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\muhamed.gamal\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\muhamed.gamal\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\muhamed.gamal\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\muhamed.gamal\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\muhamed.gamal\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\muhamed.gamal\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\muhamed.gamal\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\muhamed.gamal\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\muhamed.gamal\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\muhamed.gamal\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\muhamed.gamal\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\muhamed.gamal\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\muhamed.gamal\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\muhamed.gamal\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\muhamed.gamal\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\muhamed.gamal\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Africa/Cairo"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="23"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-23\bin"/>
+    <property name="sun.java.command" value="C:\Users\muhamed.gamal\AppData\Local\Temp\surefire12911788351666525172\surefirebooter-20260104143607083_3.jar C:\Users\muhamed.gamal\AppData\Local\Temp\surefire12911788351666525172 2026-01-04T14-36-06_756-jvmRun1 surefire-20260104143607083_1tmp surefire_0-20260104143607083_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\RestAssured\target\test-classes;D:\RestAssured\target\classes;C:\Users\muhamed.gamal\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\muhamed.gamal\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\muhamed.gamal\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\muhamed.gamal\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\muhamed.gamal\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\muhamed.gamal\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\muhamed.gamal\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\muhamed.gamal\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\muhamed.gamal\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\muhamed.gamal\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\muhamed.gamal\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\muhamed.gamal\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\muhamed.gamal\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\muhamed.gamal\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\muhamed.gamal\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\muhamed.gamal\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\muhamed.gamal\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\muhamed.gamal\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\muhamed.gamal\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\muhamed.gamal"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-23"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\RestAssured"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\muhamed.gamal\AppData\Local\Temp\surefire12911788351666525172\surefirebooter-20260104143607083_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="23.0.2+7-58"/>
+    <property name="user.name" value="muhamed.gamal"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\muhamed.gamal\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\MUHAME~1.GAM\AppData\Local\Temp\"/>
+    <property name="java.version" value="23.0.2"/>
+    <property name="user.dir" value="D:\RestAssured"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-23\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\170\DTS\Binn\;C:\Program Files\Java\jdk-23\bin;D:\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\Users\muhamed.gamal\AppData\Local\Microsoft\WindowsApps;C:\Users\muhamed.gamal\AppData\Local\Programs\IntelliJ IDEA Community Edition 2025.2.6\bin;C:\Users\muhamed.gamal\AppData\Local\Programs\Git\cmd;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="23.0.2+7-58"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="67.0"/>
+  </properties>
+  <testcase name="extract" classname="TestCase" time="6.947">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://685116798612b47a2c088d2c.mockapi.io/api/maghraby/tasks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+io.restassured.internal.RestAssuredResponseImpl@72c047f3
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="getLogs" classname="TestCase" time="6.977"/>
+  <testcase name="IfError" classname="TestCase" time="6.977"/>
+  <testcase name="testEmpty" classname="TestCase" time="0.146">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token
+Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS
+Access-Control-Allow-Origin: *
+Content-Length: 536
+Content-Type: application/json
+Date: Sun, 04 Jan 2026 12:36:15 GMT
+Etag: "-1265336426"
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=5N6%2FDc7U%2ByjSKM8PKI3vmkfrZYT9REW1OHlKe6fXF7M%3D\u0026sid=1b10b0ff-8a76-4548-befa-353fc6c6c045\u0026ts=1767530175"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=5N6%2FDc7U%2ByjSKM8PKI3vmkfrZYT9REW1OHlKe6fXF7M%3D&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&ts=1767530175"
+Server: Heroku
+Via: 1.1 heroku-router
+X-Powered-By: Express
+
+[
+    {
+        "createdAt": "2025-06-16T16:36:35.615Z",
+        "name": "Muhamed Elmaghraby",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/2.jpg",
+        "country": "Egypt",
+        "id": "0"
+    },
+    {
+        "createdAt": "2025-06-16T16:36:35.615Z",
+        "name": "Hazel Stark",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/2.jpg",
+        "country": "Iran",
+        "id": "1"
+    },
+    {
+        "createdAt": "2025-06-17T04:35:42.682Z",
+        "name": "Steven Bosco",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/43.jpg",
+        "country": "Comoros",
+        "id": "2"
+    }
+]
+HTTP/1.1 200 OK
+Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token
+Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS
+Access-Control-Allow-Origin: *
+Content-Length: 536
+Content-Type: application/json
+Date: Sun, 04 Jan 2026 12:36:15 GMT
+Etag: "-1265336426"
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=5N6%2FDc7U%2ByjSKM8PKI3vmkfrZYT9REW1OHlKe6fXF7M%3D\u0026sid=1b10b0ff-8a76-4548-befa-353fc6c6c045\u0026ts=1767530175"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=5N6%2FDc7U%2ByjSKM8PKI3vmkfrZYT9REW1OHlKe6fXF7M%3D&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&ts=1767530175"
+Server: Heroku
+Via: 1.1 heroku-router
+X-Powered-By: Express
+
+[
+    {
+        "createdAt": "2025-06-16T16:36:35.615Z",
+        "name": "Muhamed Elmaghraby",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/2.jpg",
+        "country": "Egypt",
+        "id": "0"
+    },
+    {
+        "createdAt": "2025-06-16T16:36:35.615Z",
+        "name": "Hazel Stark",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/2.jpg",
+        "country": "Iran",
+        "id": "1"
+    },
+    {
+        "createdAt": "2025-06-17T04:35:42.682Z",
+        "name": "Steven Bosco",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/43.jpg",
+        "country": "Comoros",
+        "id": "2"
+    }
+]
+HTTP/1.1 200 OK
+Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token
+Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS
+Access-Control-Allow-Origin: *
+Content-Length: 536
+Content-Type: application/json
+Date: Sun, 04 Jan 2026 12:36:15 GMT
+Etag: "-1265336426"
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=5N6%2FDc7U%2ByjSKM8PKI3vmkfrZYT9REW1OHlKe6fXF7M%3D\u0026sid=1b10b0ff-8a76-4548-befa-353fc6c6c045\u0026ts=1767530175"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=5N6%2FDc7U%2ByjSKM8PKI3vmkfrZYT9REW1OHlKe6fXF7M%3D&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&ts=1767530175"
+Server: Heroku
+Via: 1.1 heroku-router
+X-Powered-By: Express
+
+[
+    {
+        "createdAt": "2025-06-16T16:36:35.615Z",
+        "name": "Muhamed Elmaghraby",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/2.jpg",
+        "country": "Egypt",
+        "id": "0"
+    },
+    {
+        "createdAt": "2025-06-16T16:36:35.615Z",
+        "name": "Hazel Stark",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/2.jpg",
+        "country": "Iran",
+        "id": "1"
+    },
+    {
+        "createdAt": "2025-06-17T04:35:42.682Z",
+        "name": "Steven Bosco",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/43.jpg",
+        "country": "Comoros",
+        "id": "2"
+    }
+]
+HTTP/1.1 200 OK
+Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token
+Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS
+Access-Control-Allow-Origin: *
+Content-Length: 536
+Content-Type: application/json
+Date: Sun, 04 Jan 2026 12:36:15 GMT
+Etag: "-1265336426"
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=5N6%2FDc7U%2ByjSKM8PKI3vmkfrZYT9REW1OHlKe6fXF7M%3D\u0026sid=1b10b0ff-8a76-4548-befa-353fc6c6c045\u0026ts=1767530175"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=5N6%2FDc7U%2ByjSKM8PKI3vmkfrZYT9REW1OHlKe6fXF7M%3D&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&ts=1767530175"
+Server: Heroku
+Via: 1.1 heroku-router
+X-Powered-By: Express
+
+[
+    {
+        "createdAt": "2025-06-16T16:36:35.615Z",
+        "name": "Muhamed Elmaghraby",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/2.jpg",
+        "country": "Egypt",
+        "id": "0"
+    },
+    {
+        "createdAt": "2025-06-16T16:36:35.615Z",
+        "name": "Hazel Stark",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/2.jpg",
+        "country": "Iran",
+        "id": "1"
+    },
+    {
+        "createdAt": "2025-06-17T04:35:42.682Z",
+        "name": "Steven Bosco",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/43.jpg",
+        "country": "Comoros",
+        "id": "2"
+    }
+]
+HTTP/1.1 200 OK
+Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token
+Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS
+Access-Control-Allow-Origin: *
+Content-Length: 536
+Content-Type: application/json
+Date: Sun, 04 Jan 2026 12:36:15 GMT
+Etag: "-1265336426"
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=5N6%2FDc7U%2ByjSKM8PKI3vmkfrZYT9REW1OHlKe6fXF7M%3D\u0026sid=1b10b0ff-8a76-4548-befa-353fc6c6c045\u0026ts=1767530175"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=5N6%2FDc7U%2ByjSKM8PKI3vmkfrZYT9REW1OHlKe6fXF7M%3D&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&ts=1767530175"
+Server: Heroku
+Via: 1.1 heroku-router
+X-Powered-By: Express
+
+[
+    {
+        "createdAt": "2025-06-16T16:36:35.615Z",
+        "name": "Muhamed Elmaghraby",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/2.jpg",
+        "country": "Egypt",
+        "id": "0"
+    },
+    {
+        "createdAt": "2025-06-16T16:36:35.615Z",
+        "name": "Hazel Stark",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/2.jpg",
+        "country": "Iran",
+        "id": "1"
+    },
+    {
+        "createdAt": "2025-06-17T04:35:42.682Z",
+        "name": "Steven Bosco",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/43.jpg",
+        "country": "Comoros",
+        "id": "2"
+    }
+]
+HTTP/1.1 200 OK
+Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token
+Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS
+Access-Control-Allow-Origin: *
+Content-Length: 536
+Content-Type: application/json
+Date: Sun, 04 Jan 2026 12:36:15 GMT
+Etag: "-1265336426"
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=5N6%2FDc7U%2ByjSKM8PKI3vmkfrZYT9REW1OHlKe6fXF7M%3D\u0026sid=1b10b0ff-8a76-4548-befa-353fc6c6c045\u0026ts=1767530175"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=5N6%2FDc7U%2ByjSKM8PKI3vmkfrZYT9REW1OHlKe6fXF7M%3D&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&ts=1767530175"
+Server: Heroku
+Via: 1.1 heroku-router
+X-Powered-By: Express
+
+[
+    {
+        "createdAt": "2025-06-16T16:36:35.615Z",
+        "name": "Muhamed Elmaghraby",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/2.jpg",
+        "country": "Egypt",
+        "id": "0"
+    },
+    {
+        "createdAt": "2025-06-16T16:36:35.615Z",
+        "name": "Hazel Stark",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/2.jpg",
+        "country": "Iran",
+        "id": "1"
+    },
+    {
+        "createdAt": "2025-06-17T04:35:42.682Z",
+        "name": "Steven Bosco",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/43.jpg",
+        "country": "Comoros",
+        "id": "2"
+    }
+]
+]]></system-out>
+  </testcase>
+  <testcase name="testSTATUSCODE" classname="TestCase" time="0.546">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token
+Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS
+Access-Control-Allow-Origin: *
+Content-Length: 536
+Content-Type: application/json
+Date: Sun, 04 Jan 2026 12:36:16 GMT
+Etag: "-1265336426"
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=bNUTGGfBxxBpSyp1Xc4Qtv6Z3Pq9DVYE9ETwYY6Rd1U%3D\u0026sid=1b10b0ff-8a76-4548-befa-353fc6c6c045\u0026ts=1767530176"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=bNUTGGfBxxBpSyp1Xc4Qtv6Z3Pq9DVYE9ETwYY6Rd1U%3D&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&ts=1767530176"
+Server: Heroku
+Via: 1.1 heroku-router
+X-Powered-By: Express
+
+[
+    {
+        "createdAt": "2025-06-16T16:36:35.615Z",
+        "name": "Muhamed Elmaghraby",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/2.jpg",
+        "country": "Egypt",
+        "id": "0"
+    },
+    {
+        "createdAt": "2025-06-16T16:36:35.615Z",
+        "name": "Hazel Stark",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/2.jpg",
+        "country": "Iran",
+        "id": "1"
+    },
+    {
+        "createdAt": "2025-06-17T04:35:42.682Z",
+        "name": "Steven Bosco",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/43.jpg",
+        "country": "Comoros",
+        "id": "2"
+    }
+]
+HTTP/1.1 200 OK
+Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token
+Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS
+Access-Control-Allow-Origin: *
+Content-Length: 536
+Content-Type: application/json
+Date: Sun, 04 Jan 2026 12:36:16 GMT
+Etag: "-1265336426"
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=bNUTGGfBxxBpSyp1Xc4Qtv6Z3Pq9DVYE9ETwYY6Rd1U%3D\u0026sid=1b10b0ff-8a76-4548-befa-353fc6c6c045\u0026ts=1767530176"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=bNUTGGfBxxBpSyp1Xc4Qtv6Z3Pq9DVYE9ETwYY6Rd1U%3D&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&ts=1767530176"
+Server: Heroku
+Via: 1.1 heroku-router
+X-Powered-By: Express
+
+[
+    {
+        "createdAt": "2025-06-16T16:36:35.615Z",
+        "name": "Muhamed Elmaghraby",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/2.jpg",
+        "country": "Egypt",
+        "id": "0"
+    },
+    {
+        "createdAt": "2025-06-16T16:36:35.615Z",
+        "name": "Hazel Stark",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/2.jpg",
+        "country": "Iran",
+        "id": "1"
+    },
+    {
+        "createdAt": "2025-06-17T04:35:42.682Z",
+        "name": "Steven Bosco",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/43.jpg",
+        "country": "Comoros",
+        "id": "2"
+    }
+]
+HTTP/1.1 200 OK
+Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token
+Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS
+Access-Control-Allow-Origin: *
+Content-Length: 536
+Content-Type: application/json
+Date: Sun, 04 Jan 2026 12:36:16 GMT
+Etag: "-1265336426"
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=bNUTGGfBxxBpSyp1Xc4Qtv6Z3Pq9DVYE9ETwYY6Rd1U%3D\u0026sid=1b10b0ff-8a76-4548-befa-353fc6c6c045\u0026ts=1767530176"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=bNUTGGfBxxBpSyp1Xc4Qtv6Z3Pq9DVYE9ETwYY6Rd1U%3D&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&ts=1767530176"
+Server: Heroku
+Via: 1.1 heroku-router
+X-Powered-By: Express
+
+[
+    {
+        "createdAt": "2025-06-16T16:36:35.615Z",
+        "name": "Muhamed Elmaghraby",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/2.jpg",
+        "country": "Egypt",
+        "id": "0"
+    },
+    {
+        "createdAt": "2025-06-16T16:36:35.615Z",
+        "name": "Hazel Stark",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/2.jpg",
+        "country": "Iran",
+        "id": "1"
+    },
+    {
+        "createdAt": "2025-06-17T04:35:42.682Z",
+        "name": "Steven Bosco",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/43.jpg",
+        "country": "Comoros",
+        "id": "2"
+    }
+]
+HTTP/1.1 200 OK
+Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token
+Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS
+Access-Control-Allow-Origin: *
+Content-Length: 536
+Content-Type: application/json
+Date: Sun, 04 Jan 2026 12:36:16 GMT
+Etag: "-1265336426"
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=bNUTGGfBxxBpSyp1Xc4Qtv6Z3Pq9DVYE9ETwYY6Rd1U%3D\u0026sid=1b10b0ff-8a76-4548-befa-353fc6c6c045\u0026ts=1767530176"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=bNUTGGfBxxBpSyp1Xc4Qtv6Z3Pq9DVYE9ETwYY6Rd1U%3D&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&ts=1767530176"
+Server: Heroku
+Via: 1.1 heroku-router
+X-Powered-By: Express
+
+[
+    {
+        "createdAt": "2025-06-16T16:36:35.615Z",
+        "name": "Muhamed Elmaghraby",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/2.jpg",
+        "country": "Egypt",
+        "id": "0"
+    },
+    {
+        "createdAt": "2025-06-16T16:36:35.615Z",
+        "name": "Hazel Stark",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/2.jpg",
+        "country": "Iran",
+        "id": "1"
+    },
+    {
+        "createdAt": "2025-06-17T04:35:42.682Z",
+        "name": "Steven Bosco",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/43.jpg",
+        "country": "Comoros",
+        "id": "2"
+    }
+]
+]]></system-out>
+  </testcase>
+  <testcase name="testNotEmpty" classname="TestCase" time="0.986"/>
+  <testcase name="testHasItems" classname="TestCase" time="0.003"/>
+  <testcase name="testNot" classname="TestCase" time="0.004"/>
+  <testcase name="testHasItem" classname="TestCase" time="0.004"/>
+  <testcase name="testContainsInAnyOrder" classname="TestCase" time="0.003"/>
+  <testcase name="testContains" classname="TestCase" time="0.003"/>
+  <testcase name="assertOnResponseBody" classname="TestCase" time="0.023"/>
+  <testcase name="extractObject" classname="TestCase" time="0.028">
+    <system-out><![CDATA[Muhamed Elmaghraby
+]]></system-out>
+  </testcase>
+  <testcase name="testEqualTo" classname="TestCase" time="0.0"/>
+  <testcase name="testTime" classname="TestCase" time="0.503">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token
+Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS
+Access-Control-Allow-Origin: *
+Content-Length: 536
+Content-Type: application/json
+Date: Sun, 04 Jan 2026 12:36:17 GMT
+Etag: "-1265336426"
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=LdX43iDBYFIMpqFlBKQCIIhBTz0FxC6UUXjcxv5zymI%3D\u0026sid=1b10b0ff-8a76-4548-befa-353fc6c6c045\u0026ts=1767530177"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=LdX43iDBYFIMpqFlBKQCIIhBTz0FxC6UUXjcxv5zymI%3D&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&ts=1767530177"
+Server: Heroku
+Via: 1.1 heroku-router
+X-Powered-By: Express
+
+[
+    {
+        "createdAt": "2025-06-16T16:36:35.615Z",
+        "name": "Muhamed Elmaghraby",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/2.jpg",
+        "country": "Egypt",
+        "id": "0"
+    },
+    {
+        "createdAt": "2025-06-16T16:36:35.615Z",
+        "name": "Hazel Stark",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/2.jpg",
+        "country": "Iran",
+        "id": "1"
+    },
+    {
+        "createdAt": "2025-06-17T04:35:42.682Z",
+        "name": "Steven Bosco",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/43.jpg",
+        "country": "Comoros",
+        "id": "2"
+    }
+]
+]]></system-out>
+  </testcase>
+  <testcase name="testSize" classname="TestCase" time="0.249">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Access-Control-Allow-Headers: X-Requested-With,Content-Type,Cache-Control,access_token
+Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS
+Access-Control-Allow-Origin: *
+Content-Length: 536
+Content-Type: application/json
+Date: Sun, 04 Jan 2026 12:36:18 GMT
+Etag: "-1265336426"
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=cT19L6Lzu5JHgrhUXmOnzR4ZZZOQeziBaiFMeY7iq1Q%3D\u0026sid=1b10b0ff-8a76-4548-befa-353fc6c6c045\u0026ts=1767530178"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=cT19L6Lzu5JHgrhUXmOnzR4ZZZOQeziBaiFMeY7iq1Q%3D&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&ts=1767530178"
+Server: Heroku
+Via: 1.1 heroku-router
+X-Powered-By: Express
+
+[
+    {
+        "createdAt": "2025-06-16T16:36:35.615Z",
+        "name": "Muhamed Elmaghraby",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/2.jpg",
+        "country": "Egypt",
+        "id": "0"
+    },
+    {
+        "createdAt": "2025-06-16T16:36:35.615Z",
+        "name": "Hazel Stark",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/2.jpg",
+        "country": "Iran",
+        "id": "1"
+    },
+    {
+        "createdAt": "2025-06-17T04:35:42.682Z",
+        "name": "Steven Bosco",
+        "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/43.jpg",
+        "country": "Comoros",
+        "id": "2"
+    }
+]
+]]></system-out>
+  </testcase>
+  <testcase name="InvalidTokenWithStatus" classname="TestCasesForEmailSTG" time="0.344">
+    <system-out><![CDATA[HTTP/1.1 401 Unauthorized
+Transfer-Encoding: chunked
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:17 GMT
+HTTP/1.1 401 Unauthorized
+Transfer-Encoding: chunked
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:17 GMT
+HTTP/1.1 401 Unauthorized
+Transfer-Encoding: chunked
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:17 GMT
+]]></system-out>
+  </testcase>
+  <testcase name="InvalidEmail_Format_To" classname="TestCasesForEmailSTG" time="2.478">
+    <system-out><![CDATA[HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:20 GMT
+
+{
+    "status": false,
+    "responseMessage": "One or more Emails have incorrect format"
+}
+HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:20 GMT
+
+{
+    "status": false,
+    "responseMessage": "One or more MSISDNs have incorrect format"
+}
+HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:20 GMT
+
+{
+    "status": false,
+    "responseMessage": "One or more Emails have incorrect format"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="InvalidEmail_Format_Sender" classname="TestCasesForEmailSTG" time="2.482">
+    <system-out><![CDATA[HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:20 GMT
+
+{
+    "status": false,
+    "responseMessage": "One or more MSISDNs have incorrect format"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="MissingEmail" classname="TestCasesForEmailSTG" time="0.008">
+    <system-out><![CDATA[HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:20 GMT
+
+{
+    "status": false,
+    "responseMessage": "No Emails Sent"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="InvalidChannel_Format" classname="TestCasesForEmailSTG" time="0.314">
+    <system-out><![CDATA[HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:21 GMT
+
+{
+    "status": false,
+    "responseMessage": "One or more MSISDNs have incorrect format"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="MissingChannel_Format" classname="TestCasesForEmailSTG" time="0.264">
+    <system-out><![CDATA[HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:22 GMT
+
+{
+    "status": false,
+    "responseMessage": "One or more MSISDNs have incorrect format"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="SendRequestWithoutSenderSenderTemplateMessageInfo" classname="TestCasesForEmailSTG" time="0.272">
+    <system-out><![CDATA[HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:24 GMT
+
+{
+    "status": false,
+    "responseMessage": "No Emails Sent"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="TokenWithStatus" classname="TestCasesForEmailSTG" time="0.345">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:25 GMT
+
+{
+    "status": true,
+    "messageId": "46399",
+    "responseMessage": "Email Sent Successfully"
+}
+HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:25 GMT
+
+{
+    "status": true,
+    "messageId": "46400",
+    "responseMessage": "Email Sent Successfully"
+}
+HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:25 GMT
+
+{
+    "status": true,
+    "messageId": "46401",
+    "responseMessage": "Email Sent Successfully"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="ValidChannel_Format" classname="TestCasesForEmailSTG" time="0.042">
+    <failure message="1 expectation failed.&#10;Expected response time was not a value less than &lt;3000L&gt; milliseconds, was 4031 milliseconds (4031 milliseconds)." type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected response time was not a value less than <3000L> milliseconds, was 4031 milliseconds (4031 milliseconds).
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$26.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.time(ResponseSpecificationImpl.groovy:127)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.time(ValidatableResponseOptionsImpl.java:409)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.time(ValidatableResponseOptionsImpl.java:405)
+	at TestCasesForEmailSTG.ValidChannel_Format(TestCasesForEmailSTG.java:248)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+]]></failure>
+  </testcase>
+  <testcase name="ValidEmail" classname="TestCasesForEmailSTG" time="0.043">
+    <failure message="1 expectation failed.&#10;Expected response time was not a value less than &lt;4000L&gt; milliseconds, was 8369 milliseconds (8369 milliseconds)." type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected response time was not a value less than <4000L> milliseconds, was 8369 milliseconds (8369 milliseconds).
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$26.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.time(ResponseSpecificationImpl.groovy:127)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.time(ValidatableResponseOptionsImpl.java:409)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.time(ValidatableResponseOptionsImpl.java:405)
+	at TestCasesForEmailSTG.ValidEmail(TestCasesForEmailSTG.java:112)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+]]></failure>
+  </testcase>
+  <testcase name="AssertThatChannelNotHaveSameChannelForFailOver" classname="TestCasesForEmailSTG" time="0.29">
+    <system-out><![CDATA[HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:25 GMT
+
+{
+    "status": false,
+    "responseMessage": "Failover channels cannot include primary channel 'Email'."
+}
+]]></system-out>
+  </testcase>
+  <testcase name="SendRequestWithoutCampaign" classname="TestCasesForEmailSTG" time="1.92">
+    <failure message="1 expectation failed.&#10;Expected response time was not a value less than &lt;3000L&gt; milliseconds, was 4801 milliseconds (4801 milliseconds)." type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected response time was not a value less than <3000L> milliseconds, was 4801 milliseconds (4801 milliseconds).
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$26.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.time(ResponseSpecificationImpl.groovy:127)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.time(ValidatableResponseOptionsImpl.java:409)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.time(ValidatableResponseOptionsImpl.java:405)
+	at TestCasesForEmailSTG.SendRequestWithoutCampaign(TestCasesForEmailSTG.java:348)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+]]></failure>
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:27 GMT
+
+{
+    "status": true,
+    "messageId": "46402",
+    "responseMessage": "Email Sent Successfully"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="SendRequestWithoutFailover" classname="TestCasesForEmailSTG" time="2.228"/>
+  <testcase name="AssertThatAPIWorkingWithoutLanguageANDMetaData" classname="TestCasesForEmailSTG" time="2.247">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:27 GMT
+
+{
+    "status": true,
+    "messageId": "46404",
+    "responseMessage": "Email Sent Successfully"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="InvalidTokenWithStatus" classname="TestCasesForWhatsappSTG" time="0.346"/>
+  <testcase name="InvalidPhoneNumber_Format" classname="TestCasesForWhatsappSTG" time="0.0"/>
+  <testcase name="MissingPhoneNumber" classname="TestCasesForWhatsappSTG" time="0.349">
+    <system-out><![CDATA[HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:20 GMT
+
+{
+    "status": false,
+    "responseMessage": "One or more MSISDNs have incorrect format"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="InvalidChannel_Format" classname="TestCasesForWhatsappSTG" time="0.385">
+    <system-out><![CDATA[HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:21 GMT
+
+{
+    "status": false,
+    "responseMessage": "Unsupported channel type: 5"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="MissingChannel_Format" classname="TestCasesForWhatsappSTG" time="0.245">
+    <system-out><![CDATA[HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:21 GMT
+
+{
+    "status": false,
+    "responseMessage": "Unsupported channel type: 0"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="ValidChannel_Format" classname="TestCasesForWhatsappSTG" time="0.595">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:22 GMT
+
+{
+    "status": true,
+    "messageId": "649138",
+    "responseMessage": "WhatsApp Message Sent Sucessfully"
+}
+HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:22 GMT
+
+{
+    "status": true,
+    "messageId": "649140",
+    "responseMessage": "WhatsApp Message Sent Sucessfully"
+}
+HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:22 GMT
+
+{
+    "status": true,
+    "messageId": "649139",
+    "responseMessage": "WhatsApp Message Sent Sucessfully"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="TokenWithStatus" classname="TestCasesForWhatsappSTG" time="0.595"/>
+  <testcase name="ValidPhoneNumber" classname="TestCasesForWhatsappSTG" time="0.595"/>
+  <testcase name="SendRequestWithoutSenderSenderTemplateMessageInfo" classname="TestCasesForWhatsappSTG" time="0.238">
+    <system-out><![CDATA[HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:23 GMT
+
+{
+    "status": false,
+    "responseMessage": "Please provide template ID or message text"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="SendRequestWithoutCampaign" classname="TestCasesForWhatsappSTG" time="0.552">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:23 GMT
+
+{
+    "status": true,
+    "messageId": "649141",
+    "responseMessage": "WhatsApp Message Sent Sucessfully"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="SendRequestWithoutFailover" classname="TestCasesForWhatsappSTG" time="0.404">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:24 GMT
+
+{
+    "status": true,
+    "messageId": "649142",
+    "responseMessage": "WhatsApp Message Sent Sucessfully"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="AssertThatAPIWorkingWithoutLanguageANDMetaData" classname="TestCasesForWhatsappSTG" time="0.328">
+    <system-out><![CDATA[HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Content-Type: application/problem+json; charset=utf-8
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:24 GMT
+
+{
+    "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-79d624048b7e3a96d51bd148e0bba7c6-e6a86ffb4eff0932-00",
+    "errors": {
+        "$": [
+            "The JSON object contains a trailing comma at the end which is not supported in this mode. Change the reader options. Path: $ | LineNumber: 24 | BytePositionInLine: 0."
+        ]
+    }
+}
+]]></system-out>
+  </testcase>
+  <testcase name="AssertThatChannelNotHaveSameChannelForFailOver" classname="TestCasesForWhatsappSTG" time="0.227">
+    <system-out><![CDATA[HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:25 GMT
+
+{
+    "status": false,
+    "responseMessage": "Failover channels cannot include primary channel 'WhatsApp'."
+}
+]]></system-out>
+  </testcase>
+  <testcase name="InvalidTokenWithStatus" classname="TestCasesForSMSSTG" time="0.347"/>
+  <testcase name="InvalidPhoneNumber_Format" classname="TestCasesForSMSSTG" time="2.478"/>
+  <testcase name="MissingPhoneNumber" classname="TestCasesForSMSSTG" time="0.024">
+    <system-out><![CDATA[HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:20 GMT
+
+{
+    "status": false,
+    "responseMessage": "No MSISDNs Sent"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="InvalidChannel_Format" classname="TestCasesForSMSSTG" time="0.0">
+    <system-out><![CDATA[HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:21 GMT
+
+{
+    "status": false,
+    "responseMessage": "Unsupported channel type: 5"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="MissingChannel_Format" classname="TestCasesForSMSSTG" time="0.239">
+    <system-out><![CDATA[HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:21 GMT
+
+{
+    "status": false,
+    "responseMessage": "Unsupported channel type: 0"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="SendRequestWithoutSenderSenderTemplateMessageInfo" classname="TestCasesForSMSSTG" time="0.23">
+    <system-out><![CDATA[HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:22 GMT
+
+{
+    "status": false,
+    "responseMessage": "Please provide template ID or message text"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="AssertThatChannelNotHaveSameChannelForFailOver" classname="TestCasesForSMSSTG" time="0.242">
+    <system-out><![CDATA[HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:25 GMT
+
+{
+    "status": false,
+    "responseMessage": "Failover channels cannot include primary channel 'Sms'."
+}
+]]></system-out>
+  </testcase>
+  <testcase name="TokenWithStatus" classname="TestCasesForSMSSTG" time="0.197">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:25 GMT
+
+{
+    "status": true,
+    "messageId": "250796",
+    "responseMessage": "SMS Sent Successfully"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="ValidPhoneNumber" classname="TestCasesForSMSSTG" time="0.923">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:26 GMT
+
+{
+    "status": true,
+    "messageId": "250797",
+    "responseMessage": "SMS Sent Successfully"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="ValidChannel_Format" classname="TestCasesForSMSSTG" time="2.227">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:27 GMT
+
+{
+    "status": true,
+    "messageId": "250798",
+    "responseMessage": "SMS Sent Successfully"
+}
+HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:27 GMT
+
+{
+    "status": true,
+    "messageId": "46403",
+    "responseMessage": "Email Sent Successfully"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="SendRequestWithoutCampaign" classname="TestCasesForSMSSTG" time="3.862">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:29 GMT
+
+{
+    "status": true,
+    "messageId": "250799",
+    "responseMessage": "SMS Sent Successfully"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="AssertThatAPIWorkingWithoutLanguageANDMetaData" classname="TestCasesForSMSSTG" time="4.73">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:30 GMT
+
+{
+    "status": true,
+    "messageId": "250800",
+    "responseMessage": "SMS Sent Successfully"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="SendRequestWithoutFailover" classname="TestCasesForSMSSTG" time="5.091">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Basic
+X-Powered-By: ASP.NET
+Date: Sun, 04 Jan 2026 12:36:30 GMT
+
+{
+    "status": true,
+    "messageId": "250801",
+    "responseMessage": "SMS Sent Successfully"
+}
+]]></system-out>
+  </testcase>
+</testsuite>
