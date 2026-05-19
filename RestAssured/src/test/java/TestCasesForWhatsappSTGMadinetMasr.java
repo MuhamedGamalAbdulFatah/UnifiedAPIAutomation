@@ -5,7 +5,7 @@ import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.lessThan;
 
 public class TestCasesForWhatsappSTGMadinetMasr {
-    String token = "c25hc2hhYXRAbWFkaW5ldG1hc3IuY29tOjUyNTozOTc=";
+    String token = "c25hc2hhYXRAbWFkaW5ldG1hc3IuY29tOjUyNTozOTc";
 
     @Test (priority = 1)
     public void TokenWithStatus(){
