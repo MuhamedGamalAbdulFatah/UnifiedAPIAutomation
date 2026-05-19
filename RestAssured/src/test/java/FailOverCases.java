@@ -5,7 +5,7 @@ import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.lessThan;
 
 public class FailOverCases {
-    String token = "c2hvcGlmeUBhcnB1cGx1cy5jb206MTI2OjIyOA==";
+    String token = "c2hvcGlmeUBhcnB1cGx1cy5jb206MTI2OjIyO";
 
 
     /// Send To SMS
