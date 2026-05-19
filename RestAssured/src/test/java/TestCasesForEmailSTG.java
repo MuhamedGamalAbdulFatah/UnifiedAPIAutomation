@@ -5,7 +5,7 @@ import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.lessThan;
 
 public class TestCasesForEmailSTG {
-    String token = "Y2xvdWRjb21haUBnbWFpbC5jb206NTI5OjM5OA==";
+    String token = "Y2xvdWRjb21haUBnbWFpbC5jb206NTI5OjM5O";
 
     @Test (priority = 1)
     public void TokenWithStatus(){
